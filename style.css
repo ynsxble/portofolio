@@ -1,0 +1,356 @@
+html {
+  scroll-behavior: smooth;
+}
+
+.hero {
+  position: relative;
+  background: linear-gradient(135deg, #ffb6c1, #ffe6f0);
+  padding: 100px 20px 80px;
+  text-align: center;
+  color: #fff;
+  overflow: hidden;
+}
+
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 1;
+  position: relative;
+}
+
+.hero-img img {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 6px solid rgba(255, 255, 255, 0.6);
+  box-shadow: 0 0 20px rgba(255, 105, 180, 0.6);
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(8px);
+  margin-bottom: 20px;
+}
+
+.hero-text h1 {
+  font-size: 2.5em;
+  margin: 0;
+  color: #ff69b4;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.hero-text p {
+  font-size: 1.2em;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  color: #ff99cc;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.btn {
+  background-color: #fff;
+  color: #d63384;
+  padding: 10px 20px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+  border: none;
+}
+
+.btn:hover {
+  background-color: #d63384;
+  color: #fff;
+}
+
+.btn-secondary {
+  background-color: transparent;
+  border: 2px solid #fff;
+  color: #fff;
+}
+
+.btn-secondary:hover {
+  background-color: #fff;
+  color: #d63384;
+}
+
+.hero-wave {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #fff0f5;
+    margin: 0;
+    padding: 0;
+    color: #4a004a;
+}
+
+.container {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #ffe6f0;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(255, 192, 203, 0.4);
+}
+
+.profile-photo {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.profile-photo img {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid #ff99cc;
+    box-shadow: 0 0 15px rgba(255, 105, 180, 0.3);
+}
+
+h1 {
+    margin-top: 10px;
+    font-size: 36px;
+    font-weight: bold;
+    color: #ff69b4; /* ini pink cerah - bisa diganti juga */
+    text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.4); /* biar makin pop out */
+}
+
+
+.section {
+    background-color: #fff;
+    border-radius: 12px;
+    padding: 20px;
+    margin-top: 25px;
+    box-shadow: 0 0 10px rgba(255, 192, 203, 0.3);
+}
+
+.section h2 {
+    color: #b30059;
+    margin-bottom: 10px;
+    font-size: 1.2em;
+    border-bottom: 2px solid #ffb6c1;
+    padding-bottom: 5px;
+}
+
+.section ul, .section p {
+    color: #660033;
+    margin-left: 15px;
+    line-height: 1.6;
+}
+
+.social-links {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.social-links a {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    text-decoration: none;
+    color: #fff;
+    background-color: #ff69b4;
+    padding: 10px 15px;
+    border-radius: 30px;
+    transition: 0.3s ease;
+    font-weight: 500;
+}
+
+.social-links a:hover {
+    background-color: #d63384;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(214, 51, 132, 0.4);
+}
+
+.social-links img {
+    filter: invert(1);
+    width: 20px;
+}
+.content-section {
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+}
+
+.glass-card {
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(12px);
+    border-radius: 20px;
+    padding: 30px;
+    max-width: 700px;
+    width: 100%;
+    box-shadow: 0 8px 20px rgba(255, 192, 203, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.glass-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 30px rgba(255, 105, 180, 0.4);
+}
+
+.glass-card h2 {
+    color: #b30059;
+    border-bottom: 2px solid #ffb6c1;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+}
+
+.glass-card ul, .glass-card p {
+    color: #660033;
+    line-height: 1.7;
+}
+.wave {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.wave svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 100px;
+}
+.card {
+  backdrop-filter: blur(10px);
+  background: rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 20px;
+  padding: 20px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+  background: linear-gradient(135deg, #ffd1dc, #ffe6f0);
+
+}
+#particles-js {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background-color: #fff0f5; /* bisa kamu ganti sesuai tema */
+}
+.profile-photo {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.photo-border {
+  position: relative;
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 5px solid #ff99cc;
+  box-shadow: 0 0 20px #ffb6d9, 0 0 40px #ff69b4;
+  animation: pulse-border 3s infinite ease-in-out;
+}
+
+.profile-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.glow-circle {
+  position: absolute;
+  top: -20px;
+  left: -20px;
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(255,105,180,0.2), transparent);
+  filter: blur(10px);
+  z-index: -1;
+  animation: glow 5s infinite alternate;
+}
+
+@keyframes glow {
+  0% {
+    transform: scale(1);
+    opacity: 0.5;
+  }
+  100% {
+    transform: scale(1.2);
+    opacity: 1;
+  }
+}
+
+@keyframes pulse-border {
+  0% {
+    box-shadow: 0 0 20px #ffb6d9, 0 0 40px #ff69b4;
+  }
+  50% {
+    box-shadow: 0 0 30px #ffc0cb, 0 0 60px #ff1493;
+  }
+  100% {
+    box-shadow: 0 0 20px #ffb6d9, 0 0 40px #ff69b4;
+  }
+}
+
+/* Efek animasi bunga mengambang dan goyang */
+@keyframes flowerFloat {
+  0% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  25% {
+    transform: translateY(8px) rotate(2deg);
+  }
+  50% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  75% {
+    transform: translateY(-8px) rotate(-2deg);
+  }
+  100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+}
+.stars {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  overflow: hidden;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.star {
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  background: white;
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.6);
+  animation: twinkle 2s infinite ease-in-out;
+  opacity: 0.8;
+}
+
+@keyframes twinkle {
+  0%, 100% { opacity: 0.2; transform: scale(0.8); }
+  50% { opacity: 1; transform: scale(1.2); }
+}
